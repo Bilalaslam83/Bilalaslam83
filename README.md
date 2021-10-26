@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @bilal-07
 - 👀 I’m interested in Web Development 👩‍💻
 - 🌱 I’m currently learning Full Stack Develpoment(React JS + Node JS).
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate on Web Applications
 - 📫 How to reach me :bilalaslam0355@gmail.com 
 
 <!---
