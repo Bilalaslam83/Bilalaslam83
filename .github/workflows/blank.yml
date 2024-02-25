@@ -1,0 +1,41 @@
+name: Main CI Build Workflow for slack
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify_slack:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Mapping for slack notifications
+        uses: kanga333/variable-mapper@v0.3.0
+        id: environment
+        with:
+          key: "${{ github.ref_name }}"
+          map: |
+            {
+              "dev": {
+                "slack_webhook": "https://hooks.slack.com/services/xxx",
+                "channel": "dev"
+              },
+              "stage": {
+                "slack_webhook": "https://hooks.slack.com/services/xxx",
+                "channel": "stage"
+              }
+            }
+            
+
+      - name: Notify slack on success
+        if: ${{ success() }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: ${{ steps.environment.outputs.channel }}
+          SLACK_COLOR: "#228B22"  
+          SLACK_MESSAGE: "${{ github.job }} is successful"
+          SLACK_WEBHOOK: ${{ steps.environment.outputs.slack_webhook }}
