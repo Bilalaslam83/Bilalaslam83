@@ -38,4 +38,4 @@ jobs:
           SLACK_CHANNEL: ${{ steps.environment.outputs.channel }}
           SLACK_COLOR: "#228B22"  
           SLACK_MESSAGE: "${{ github.job }} is successful"
-          SLACK_WEBHOOK: ${{ fromJson(steps.environment.outputs.result)[github.ref_name].slack_webhook }}
+          SLACK_WEBHOOK: ${{ fromJson(steps.environment.outputs.result)[github.ref] }}
