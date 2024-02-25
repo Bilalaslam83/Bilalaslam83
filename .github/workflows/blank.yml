@@ -29,6 +29,7 @@ jobs:
                 "channel": "stage"
               }
             }
+          export_to: env
             
 
       - name: Notify slack on success
@@ -38,4 +39,4 @@ jobs:
           SLACK_CHANNEL: ${{ steps.environment.outputs.channel }}
           SLACK_COLOR: "#228B22"  
           SLACK_MESSAGE: "${{ github.job }} is successful"
-          SLACK_WEBHOOK: ${{ fromJson(steps.mapCreator.outputs.map)[github.ref_name] }}
+          SLACK_WEBHOOK: .env.$slack_webhook .env
