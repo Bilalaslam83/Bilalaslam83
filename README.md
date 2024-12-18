@@ -7,7 +7,7 @@
 </div>
 
 ## 👤 Introduction
-Hello! I'm **Bilal Aslam**, a passionate **DevSecOps Engineer** with a strong foundation in both DevOps and Software Engineering. With **3 years of hands-on experience**, I've excelled at deploying microservices and creating robust CI/CD pipelines, all while ensuring top-notch security measures are in place. I thrive on tackling complex challenges using the latest technologies and methodologies. 
+Hello! I'm **Bilal Aslam**, a passionate **DevSecOps Engineer** with a strong DevOps and Software Engineering foundation. With **3 years of hands-on experience**, I've excelled at deploying microservices and creating robust CI/CD pipelines, all while ensuring top-notch security measures are in place. I thrive on tackling complex challenges using the latest technologies and methodologies. 
 
 ## 💼 Professional Experience
 **DevSecOps Engineer at Jeeny**  
@@ -17,10 +17,10 @@ Hello! I'm **Bilal Aslam**, a passionate **DevSecOps Engineer** with a strong fo
 - Managed Jenkins master and slave nodes to ensure seamless integration and delivery processes.
 
 ## 🛠️ Tech Stack
-- **Cloud Platforms:** AWS, Azure
+- **Cloud Platforms:** AWS, Azure, DigitalOcean, Huawei
 - **Containerization & Orchestration:** Docker, Kubernetes
-- **CI/CD Tools:** Jenkins, AWS Code Pipeline
-- **Monitoring & Security:** New Relic, ELK Stack, Trivy
+- **CI/CD Tools:** Jenkins, AWS Code Pipeline, GitHub Actions
+- **Monitoring & Security:** New Relic, ELK Stack, Trivy, SonarQube
 - **Programming Languages:** JavaScript, Python, HTML, CSS, PHP
 - **Frameworks & Libraries:** React.js, Next.js, Vue.js, Laravel
 - **Databases:** MySQL, MongoDB, Redis
